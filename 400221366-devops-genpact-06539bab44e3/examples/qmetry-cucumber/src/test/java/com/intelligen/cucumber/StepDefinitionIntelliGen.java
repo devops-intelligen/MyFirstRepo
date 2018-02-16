@@ -32,7 +32,7 @@ public class StepDefinitionIntelliGen {
     public void Once_The_Page_Load() throws Throwable {
 		//driver.get("http://google.com"); 
 		  
-		driver.get("http://35.154.85.200:6060/devops/index.html"); 
+		driver.get("http://localhost:8090/devops/index.html"); 
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 	}
