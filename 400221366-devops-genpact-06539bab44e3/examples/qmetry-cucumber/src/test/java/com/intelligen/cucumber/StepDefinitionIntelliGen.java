@@ -103,7 +103,7 @@ public class StepDefinitionIntelliGen {
    public void Verify_For_Subscribe_News_Letter() throws Throwable {
    //driver.findElement(By.linkText("Demo-github-Proj")).click();
 	   driver.manage().window().maximize();
-	   driver.get("http://35.154.85.200:6060/devops/index.html"); 
+	   driver.get("http://localhost:8090/devops/index.html"); 
 	   driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	   Thread.sleep(10000);
 	 
@@ -125,7 +125,7 @@ public class StepDefinitionIntelliGen {
   
    @Then("^Textbox Validation Visit office$")
    public void Textbox_Validation() throws Throwable {
-	   driver.get("http://35.154.85.200:6060/devops/index.html");
+	   driver.get("http://localhost:8090/devops/index.html");
 	   Thread.sleep(10000);
 	   driver.findElement(By.id("contactus")).click();
 	   Thread.sleep(3000);
