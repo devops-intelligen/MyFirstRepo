@@ -15,13 +15,19 @@
         <maven.compiler.version>3.3</maven.compiler.version>
     </properties>
 <repositories>
-    <repository>
-        <id>qmetrytestmanager-mvn-repo</id>
-        <name>QMetry_Test</name>
-        <url>https://raw.github.com/infostretch/qmetry-test-manager-for-jira/mvn-repo/</url>
-    </repository>
+   <repository>
+		<id>qmetrytestmanager-mvn-repo</id>
+		<name>QMetry Test Manager Maven Repository</name>
+		<url>https://raw.github.com/qmetry/qtm4j-maven-uploader/mvn-repo/</url>
+	</repository>
 </repositories>
     <dependencies>
+	<dependency>
+        <groupId>com.qmetry</groupId>
+        <artifactId>automation</artifactId>
+        <version>1.0.0</version>
+    </dependency>
+
      <!--<dependency>
       <groupId>org.testng</groupId>
       <artifactId>testng</artifactId>
@@ -86,16 +92,18 @@
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-surefire-plugin</artifactId>
-            <version>2.18.1</version>
+            <version>2.20</version>
             <configuration>
                 <systemPropertyVariables>
-                    <server>http://13.127.180.132:8080</server>
+                   <!-- <server>http://13.127.180.132:8080</server>
                     <apiKey>fb2edb6b4d52eda58dcc0ebf4d700f878e47492c41538bf414f6a7ceb35b69fa</apiKey>
-                    <!-- testRunName : Provide the name for the new test run -->
-                    <testRunName>Devops_Jenkins Implementation</testRunName>
+                    
+                    <testRunName>Jenkins Integeration</testRunName>
                     <platform>ios</platform>
                     <os_username>703192780</os_username>
-                    <os_password>devops@123#</os_password>
+                    <os_password>devops@123#</os_password> -->
+					
+					<cucumber.options>--plugin com.qmetry.automation.CucumberResultUploader</cucumber.options>
                 </systemPropertyVariables>
             </configuration>
         </plugin>
