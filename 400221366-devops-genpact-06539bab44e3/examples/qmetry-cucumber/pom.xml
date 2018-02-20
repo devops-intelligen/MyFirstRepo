@@ -89,12 +89,12 @@
             <version>2.18.1</version>
             <configuration>
                 <systemPropertyVariables>
-                    <server>http://35.154.56.116:8080</server>
-                    <apiKey>482a98d5c25626762e054ad7475077bf2c8cf32991bb5cc6e187a40af1b2582f</apiKey>
+                    <server>http://13.127.180.132:8080</server>
+                    <apiKey>fb2edb6b4d52eda58dcc0ebf4d700f878e47492c41538bf414f6a7ceb35b69fa</apiKey>
                     <!-- testRunName : Provide the name for the new test run -->
-                    <testRunName>Devops Implementation</testRunName>
+                    <testRunName>Devops_Jenkins Implementation</testRunName>
                     <platform>ios</platform>
-                    <os_username>sanjeeb</os_username>
+                    <os_username>703192780</os_username>
                     <os_password>devops@123#</os_password>
                 </systemPropertyVariables>
             </configuration>
