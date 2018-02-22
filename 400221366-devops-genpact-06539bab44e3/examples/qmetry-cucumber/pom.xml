@@ -16,17 +16,17 @@
     </properties>
 <repositories>
    <repository>
-		<id>qmetrytestmanager-mvn-repo</id>
-		<name>QMetry Test Manager Maven Repository</name>
-		<url>https://raw.github.com/qmetry/qtm4j-maven-uploader/mvn-repo/</url>
-	</repository>
+        <id>qmetrytestmanager-mvn-repo</id>
+        <name>QMetry Test Manager Maven Repository</name>
+        <url>https://raw.github.com/infostretch/qmetry-test-manager-for-jira/mvn-repo/</url>
+    </repository>
 </repositories>
     <dependencies>
 	<dependency>
-        <groupId>com.qmetry</groupId>
-        <artifactId>automation</artifactId>
-        <version>1.0.0</version>
-    </dependency>
+		<groupId>com.infostretch.qmetrytestmanager</groupId>
+		<artifactId>qmetrytestmanager-maven-plugin</artifactId>
+		<version>1.0.2</version>
+  	  </dependency>
 
      <!--<dependency>
       <groupId>org.testng</groupId>
@@ -89,21 +89,19 @@
     </build> -->
     <build>
     <plugins>
-        <plugin>
+       <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-surefire-plugin</artifactId>
-            <version>2.20</version>
+            <version>2.18.1</version>
             <configuration>
                 <systemPropertyVariables>
-                   <!-- <server>http://13.127.180.132:8080</server>
-                    <apiKey>fb2edb6b4d52eda58dcc0ebf4d700f878e47492c41538bf414f6a7ceb35b69fa</apiKey>
-                    
-                    <testRunName>Jenkins Integeration</testRunName>
+                    <server>http://35.154.56.116:8080</server>
+                    <apiKey>{{your API key}}</apiKey>
+                    <!-- testRunName : Provide the name for the new test run -->
+                    <testRunName>FOSS Test Run</testRunName>
                     <platform>ios</platform>
                     <os_username>703192780</os_username>
-                    <os_password>devops@123#</os_password> -->
-					
-					<cucumber.options>--plugin com.qmetry.automation.CucumberResultUploader</cucumber.options>
+                    <os_password>@mit0Verma</os_password>
                 </systemPropertyVariables>
             </configuration>
         </plugin>
