@@ -22,13 +22,7 @@
     </repository>
 </repositories>
     <dependencies>
-	<dependency>
-		<groupId>com.infostretch.qmetrytestmanager</groupId>
-		<artifactId>qmetrytestmanager-maven-plugin</artifactId>
-		<version>1.0.2</version>
-  	  </dependency>
-
-     <!--<dependency>
+	     <!--<dependency>
       <groupId>org.testng</groupId>
       <artifactId>testng</artifactId>
       <version>6.11</version>
@@ -59,7 +53,7 @@
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
-         <dependency>
+        <dependency>
         <groupId>com.infostretch.qmetrytestmanager</groupId>
         <artifactId>qmetrytestmanager-maven-plugin</artifactId>
         <version>1.0.2</version>
@@ -96,7 +90,7 @@
             <configuration>
                 <systemPropertyVariables>
                     <server>http://35.154.56.116:8080</server>
-                    <apiKey>{{your API key}}</apiKey>
+                    <apiKey>e461364d571945be2ea413f0eb0ee0aaecf5b593adaa82755036822b61719f45</apiKey>
                     <!-- testRunName : Provide the name for the new test run -->
                     <testRunName>FOSS Test Run</testRunName>
                     <platform>ios</platform>
