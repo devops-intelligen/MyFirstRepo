@@ -119,7 +119,7 @@ public class StepDefinitionIntelliGen {
 	   act.moveToElement(driver.findElement(By.id("message"))).perform();
 	   //
 	   driver.findElement(By.id("message")).sendKeys("Need help on DevOps"); 
-	   driver.quit();
+	   driver.close();	
      }
   
   
