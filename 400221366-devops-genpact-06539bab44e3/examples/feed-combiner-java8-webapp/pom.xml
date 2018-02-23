@@ -188,7 +188,7 @@
 					<mkdir dir="target/site/clover"/>
                 </configuration>
             </plugin>
-		<plugin>
+		<!-- <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-pmd-plugin</artifactId>
                 <version>3.9.0</version>
@@ -199,7 +199,7 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugin>
+            </plugin> -->
         </plugins>
     </build>
 
@@ -234,17 +234,15 @@
                 <version>2.3</version>
             </plugin>
 
-            <plugin>
+         <!--   <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-pmd-plugin</artifactId>
                 <version>3.0.1</version>
                 <configuration>
                     <targetJdk>1.6</targetJdk>
-                    <!--<rulesets>-->
-                    <!--<ruleset>pmd_rules.xml</ruleset>-->
-                    <!--</rulesets>-->
+                    
                 </configuration>
-            </plugin>
+            </plugin>  -->
         </plugins>
     </reporting>
 </project>
