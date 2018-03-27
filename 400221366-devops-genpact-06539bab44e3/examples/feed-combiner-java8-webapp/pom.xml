@@ -129,9 +129,8 @@
       
         <plugins>
 		<plugin>
-		   <groupId>com.atlassian.maven.plugins</groupId>
-		  <artifactId>clover-maven-plugin</artifactId>
-		    <version>4.1.2</version>			
+		   <groupId>org.openclover</groupId>
+        		<artifactId>clover-maven-plugin</artifactId>			
 		 <!-- <configuration>
 		     <licenseLocation>C:/clover.license</licenseLocation>
 		  </configuration> -->
