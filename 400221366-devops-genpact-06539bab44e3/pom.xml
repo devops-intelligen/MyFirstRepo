@@ -49,11 +49,11 @@
         <version>4</version>
     </parent>
 
-    <groupId>org.glassfish.jersey</groupId>
-    <artifactId>project</artifactId>
-    <packaging>pom</packaging>
-    <version>2.26-b02</version>
-    <name>jersey</name>
+    <groupId>org.genpact</groupId>
+		    <artifactId>devops</artifactId>
+		    <packaging>war</packaging>
+		    <version>1.0</version>
+		    <name>devops</name>
     <description>
         Jersey is the open source (under dual CDDL+GPL license) JAX-RS 2.0 (JSR 339)
         production quality Reference Implementation for building RESTful Web services.
