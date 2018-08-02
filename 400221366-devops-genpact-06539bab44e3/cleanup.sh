@@ -2,6 +2,7 @@
 # cleanup.sh - cleanup the CodeDeploy application
 #   application after a successful or failed test.
 #   Cleanup removes all CodeDeploy resources
+#test add
 echo "Starting cleanup of old resources"
 
 # Clean up any previous CodeDeploy artifacts 
